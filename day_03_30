@@ -1,0 +1,127 @@
+age = 19
+height = 178.25
+complex_number = 1+2j
+# Area of Triangle
+base = float(input("Enter Base: "))
+height = float(input("Enter height: "))
+area = 0.5*base*height
+print(f"the area of triangle is {area}")
+# Perimeter of Triangle
+sideA = float(input("Enter sideA: "))
+sideB = float(input("Enter sideB: "))
+sideC = float(input("Enter sideC: "))
+perimeter = sideA+sideB+sideC
+print(f"The perimeter of a triangle is {perimeter}")
+# Area of Rectangle & Perimeter of Rectangle
+base_rect = float(input("Enter base: "))
+height_rect = float(input("Enter height: "))
+area_rect = base_rect*height_rect
+perimeter_rect = 2*(base_rect+height_rect)
+print(f"the area of rectangle is {area_rect}")
+print(f"the perimeter of rectangle is {perimeter_rect}")
+# Get radius from user and calculate area and circumference
+
+pi = 3.14
+
+radius = float(input("Enter radius: "))
+
+area = pi * radius * radius
+circumference = 2 * pi * radius
+
+print(f"Area of the circle is {area}")
+print(f"Circumference of the circle is {circumference}")
+
+# Equation: y = 2x - 2
+
+m = 2      # slope
+b = -2     # y-intercept
+
+# y-intercept
+y_intercept = b
+
+# x-intercept (set y = 0)
+# 0 = 2x - 2  →  x = 1
+x_intercept = 1
+
+print("Slope:", m)
+print("Y-intercept:", y_intercept)
+print("X-intercept:", x_intercept)
+
+# Slope between 2 points
+import math # for square root
+x1,y1= 1,2
+x2,y2= -1,-2
+slope = (y2-y1)/(x2-x1)
+print(f"The slope between the points is {slope}")
+distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+print(f"The distance between the points is {distance}")
+# compare the slope in the last two tasks
+print(slope == m) # true
+
+calculating at different x values when y= x**2 + 6x + 9
+def calculate_y(x):
+  return x**2 + 6*x + 9
+
+for x in [-5,-4,-3,-2,-1,0,1,2,3,4,5]:
+    print(f"When x = {x}, y = {calculate_y(x)}")
+#comparing
+length1= len("python")
+length2= len("dragon")
+print(length1 != length2)
+
+#check if "on" is in on python and dragon
+word1 = "python"
+word2 = "dragon"
+
+# Check if "on" is in each word
+print("Is 'on' in python?", "on" in word1)
+print("Is 'on' in dragon?", "on" in word2)
+
+#I hope this course is not full of jargon use operator to check if 'jargon' is in that sentence
+
+sentence = "I hope this course is not full of jargon"
+print("is 'jargon' in the sentence? ", 'jargon' in sentence)
+
+word1 = "python"
+word2 = "dragon"
+
+# Check if "on" is in each word
+print("Is 'on' in python?", "on" not in word1)
+print("Is 'on' in dragon?", "on" not in word2)
+#length string and float
+
+word1= "python"
+length_word1 = len(word1)
+print("Length", length_word1)
+print("in float" ,float(length_word1))
+print("in string", str(float(length_word1)))
+check_if_even = length_word1 % 2
+print("is the word even?" ,check_if_even == 0)
+Floor division
+floor_div = 7 // 3
+
+# Convert 2.7 to int
+int_value = int(2.7)
+
+# Check if equal
+is_equal = floor_div == int_value
+
+print("Is 7 // 3 equal to int(2.7)?", is_equal)
+
+#calculate an employee's salary
+hours= float(input("Enter hours:"))
+rate_per_hour= float(input("Enter rate per hour:"))
+print(f"Your weekly earning is {hours*rate_per_hour}")
+#number of years
+years= int(input("Enter number of years you have lived:"))
+days_per_year= 365
+hours_per_day= 24
+minutes_per_hour= 60
+seconds_per_minute= 60
+seconds_years= days_per_year*hours_per_day*minutes_per_hour*seconds_per_minute
+print(f"You have lived for {years*seconds_years}")
+
+#python script
+
+for n in range(1,6):
+  print (n,1,n,n**2,n**3)
